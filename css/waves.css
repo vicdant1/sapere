@@ -1,0 +1,84 @@
+/* white-triangle-shape */
+
+.white-triangle-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.white-triangle-shape svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.white-triangle-shape .shape-fill {
+    fill: var(--weak-grey);
+}
+
+/* black-top-wave */
+
+.black-top-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.black-top-wave svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 66px;
+}
+
+.black-top-wave .shape-fill {
+    fill: #242424;
+}
+
+/* black-top-wave-secondary */
+
+.black-top-wave-secondary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.black-top-wave-secondary svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 97px;
+}
+
+.black-top-wave-secondary .shape-fill {
+    fill: #EEEEEE;
+}
+
+/* black-bottom-curve */
+
+.black-bottom-curve {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.black-bottom-curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 51px;
+}
+
+.black-bottom-curve .shape-fill {
+    fill: #242424;
+}

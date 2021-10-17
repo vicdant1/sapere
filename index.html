@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- General imports -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- local imports -->
+
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/waves.css">
+    <link rel="stylesheet" href="./css/generalSettings.css">
+    <link rel="stylesheet" href="./css/mediaQueries.css">
+        
+    <title>Sapere | Tech Inovations</title>
+</head>
+<body>
+    <nav class="main-navbar sticky-top">
+        <div class="container d-flex align-items-center justify-content-between py-3">
+            <a data-scroll href="#"><i class="fab fa-3x fa-500px"></i></a>
+            <ul id="menu-itens" class="d-flex align-items-center">
+                <li class="link-expand nav-links"><a data-scroll href="#newsSection">News</a></li>
+                <li class="link-expand nav-links"><a data-scroll href="#communitySection">Communty</a></li>
+                <li class="link-expand nav-links"><a data-scroll href="#crossSection">Cross</a></li>
+                <li class="link-expand nav-links"><a data-scroll href="#demo">Free trial</a></li>
+                <li class="link-expand nav-links"><a data-scroll href="#downloadSection">Download</a></li>                
+            </ul>
+            <button id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div id="home-content" class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img class="img-fluid m-auto" src="./src/img/img1.svg" alt="img1"/>
+                </div>
+                <div class="col-md-6 home-info-container">
+                    <div>
+                        <h1 class="text-center main-title">Lorem, ipsum dolor.</h1>
+                        <p class="text-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus assumenda cum fuga unde laborum saepe consectetur, corporis animi, quo, in quas. Nisi pariatur exercitationem iure, ullam ratione maiores iusto voluptatem?</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button class="btn-home btn-explore">Lorem ipsum</button>
+                        <a data-scroll class="btn-home btn-download" href="#downloadSection">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsSection" class="bg-alt section-gap">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center news-container">
+                <div class="col-md-6 reveal-delay-1">
+                    <h1 class="main-title color-fuzzy-blue">Start spreading the news</h1>
+                    <p class="color-extra-fuzzy-blue text-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veritatis autem accusantium necessitatibus, qui debitis amet quos, alias optio nulla consequatur ducimus fugiat, mollitia voluptatem!</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+                    <img id="statue" src="./src/img/Statue of liberty_Monochromatic.svg" alt="Statue of Liberty" class="img-fluid reveal-delay-1">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="communitySection" class="section-gap p-relative">
+        <div class="white-triangle-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div id="community-container" class="container">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <img src="./src/img/undraw_Personal_site_re_c4bp.svg" alt="Inbox" class="img-fluid reveal-delay-1">
+                </div>
+                <div class="col-md-6 reveal-delay-1 community-info-container">
+                    <h2 class="main-title text-center">Join in this amazing community</h2>
+                    <p class="text-paragraph mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, suscipit excepturi soluta ullam voluptas laudantium inventore rem debitis blanditiis voluptate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="crossSection" class="section-gap p-relative bg-alt">
+        <div class="black-top-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 reveal-delay-1">
+                    <h1 class="main-title color-strong-blue">Simple, fast and easy</h1>
+                    <p class="text-paragraph color-strong-blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, suscipit excepturi soluta ullam voluptas laudantium inventore rem debitis blanditiis voluptate.</p>
+                </div>
+                <div class="col-md-6 reveal-delay-1">
+                    <img src="./src/img/img3.svg" alt="discord image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="p-relative">
+        <div class="black-top-wave-secondary">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>        
+    </div>
+
+    <section id="demo" class="section-gap p-relative mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="main-title text-center">What about a free trial?</h1>
+                    <div class="video-container">
+                        <iframe class="demo-video mt-4" width="560" height="315" src="https://www.youtube.com/embed/C959XAik0qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="p-relative bg-alt">
+        <div class="black-bottom-curve">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <section id="downloadSection" class="section-gap p-relative d-flex align-items-center bg-alt">
+            <div class="container">
+                <div class="row flex-column align-items-center justify-content-center">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <img class="reveal-delay-1 img-fluid" id="stars" src="./src/img/stars.svg" alt="stars">
+                        <h1 class="main-title text-center reveal-delay-2">you come now?</h1>
+                    </div>
+                    <div class="reveal-delay-3">
+                        <button class="btn-external-link mt-4"><i class="fas fa-download"></i> download for macbook</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="footer-brand">IMAGINE A PLACE</p>
+                    <div class="d-flex align-items-center">
+                        <a href="#"><i class="mr-4 fab fa-lg fa-twitter"></i></a>
+                        <a href="#"><i class="mr-4 fab fa-lg fa-instagram"></i></a>
+                        <a href="#"><i class="mr-4 fab fa-lg fa-facebook"></i></a>
+                        <a href="#"><i class="mr-4 fab fa-lg fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <li>Product</li>
+                        <li><a href="#">Download it</a></li>
+                        <li><a href="#">Power Up</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <li>Company</li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Brand</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <li>Resources</li>
+                        <li><a href="#">University</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <li>Policy</li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacity</a></li>
+                        <li><a href="#">Cookie settings</a></li>
+                        <li><a href="#">Examples</a></li>
+                        <li><a href="#">Fields</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="height: 1px" class="color-purple"/>
+            <div class="d-flex align-items-center justify-content-between">
+                <img src="./src/img/soft_logo.svg" alt="soft brand" class="img-fluid soft-brand">
+                <button class="btn-external-link-register">Register</button>
+            </div>
+        </div>
+    </footer>
+        
+    <!-- general imports -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fae7e0756f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- local imports -->
+
+    <script src="./js/smooth-scroll.min.js"></script>
+    <script src="./js/transitions.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

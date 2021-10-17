@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+:root{
+    --white: #FFF;
+    --black: #242424;
+    --light-black: #383838;
+    --purple: #555FE7;
+    --extra-purple: #1c24a0;
+    --weak-grey: #eeeeee;
+    --fuzzy-blue: #4596A9;
+    --extra-fuzzy-blue: #357a8a;
+    --strong-blue: #2331B5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', 'Roboto', sans-serif;
+}
+
+::selection{
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: var(--purple); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--extra-purple);
+}
+
+input{
+    caret-color: var(--purple);
+    width: 10px;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+section{
+    min-height: 400px;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+a{
+    color: var(--white);
+    transition: .2s;
+}
+
+a:hover{
+    color: var(--extra-purple);
+    text-decoration: none;
+}
+
+/* useful classes */
+
+.flip-y{
+    transform: rotateY(180deg);
+}
+
+.p-relative{
+    position: relative !important;
+}
+
+.section-gap{
+    padding: 60px 0;
+}
+
+.bg-alt{
+    background-color: var(--weak-grey);
+    color: var(--black);
+}
+
+.text-paragraph{
+    text-align: justify;
+    line-height: 30px;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.main-title{
+    font-weight: bold;
+}
+
+/* color classes */
+
+.color-strong-blue{
+    color: var(--strong-blue);
+}
+
+.color-fuzzy-blue{
+    color: var(--fuzzy-blue);
+}
+
+.color-extra-fuzzy-blue{
+    color: var(--extra-fuzzy-blue);
+}
+
+.color-purple{
+    background-color: var(--purple) !important;
+}
+
+/* cool links settings */
+
+.link-expand{
+    display: inline-block;
+}
+
+.link-expand::after{
+    content: '';
+    width: 0;
+    background-color: var(--white);
+    transition: width .3s;
+    display: block;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.link-expand:hover::after{
+    width: 100%;
+}

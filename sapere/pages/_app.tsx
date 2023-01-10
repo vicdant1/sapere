@@ -12,6 +12,11 @@ const theme = createTheme({
     },
     secondary: {
       main: orange[400]
+    },
+    myCustomColor: {
+      main: red[400],
+      superDark: red[800],
+      superLight: red[200]
     }
   },
   typography: {

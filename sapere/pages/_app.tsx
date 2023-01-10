@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { CssBaseline } from '@mui/material'
 import { ThemeProvider, createTheme } from '@mui/material'
-import { orange } from '@mui/material/colors'
+import { orange, red } from '@mui/material/colors'
 
 
 const theme = createTheme({
@@ -14,6 +14,13 @@ const theme = createTheme({
       main: orange[400]
     }
   },
+  typography: {
+    myVariant: {
+      backgroundColor: red[600],
+      color: "#FFF",
+      fontSize: "2em"
+    }
+  }
 })
 
 export default function App({ Component, pageProps }: AppProps) {

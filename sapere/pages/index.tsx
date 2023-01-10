@@ -1,4 +1,4 @@
-import { Button } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 import Head from 'next/head'
 
 export default function Home() {
@@ -9,6 +9,10 @@ export default function Home() {
       </Head>
       <Button variant='contained' size="large" color="primary">Hello</Button>
       <Button variant='contained' size="large" color="secondary">Hello</Button>
+
+      <Typography variant='myVariant'>
+        Test
+      </Typography>
       <main>
       </main>
     </>

@@ -15,47 +15,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Button variant='contained'>Primary button</Button>
-      <Button variant='contained' startIcon={<Send/>} sx={{
-        '&.MuiButton-root': {
-          color: "#FFF",
-          backgroundColor: "green"
-        },
-        '.MuiButton-startIcon': {
-          backgroundColor: "red",
-          color: "#FFF"
-        }
-      }}>Sx Button</Button>
-      <br />
-
-      <Button sx={[
-        {
-          backgroundColor: "red"
-        },
-        activeIcon && {
-          backgroundColor: "blue"
-        }
-      ]} variant='contained' color='secondary'>conditional</Button>
-      {activeIcon && (
-        <>
-          active icon
-        </>
-      )}<br/>
-      <Button variant='outlined' color="primary" onClick={() => setActiveIcon(!activeIcon)}>Toggle</Button>
-      <br/>
-      <Slider
-        defaultValue={30}
-        sx={{
-          width: 300,
-          color: 'success.main',
-          '&.MuiSlider-root': {
-            color: "red"
-          },
-          '& .MuiSlider-thumb': {
-            color: "#DFC"
-          }
-        }}
-      />
     </div>
   )
 }

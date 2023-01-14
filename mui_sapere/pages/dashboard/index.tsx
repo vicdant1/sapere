@@ -1,7 +1,10 @@
+import { NextPage } from 'next'
 import React from 'react'
 
-export const Dashboard = () => {
+const Dashboard:NextPage = () => {
   return (
     <div>Dashboard</div>
   )
 }
+
+export default Dashboard;

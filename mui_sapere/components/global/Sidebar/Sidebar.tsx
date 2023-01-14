@@ -23,17 +23,19 @@ const Item = ({title, to, icon, selected, setSelected}) => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <MenuItem
-      active={selected == title}
-      style={{
-        color: colors.grey[100]
-      }}
-      onClick={() => setSelected(title)}
-      icon={icon}
-    >
-    <Typography>{title}</Typography>
-    <Link href={to}/>
-    </MenuItem>
+    <>
+      <MenuItem
+        active={selected == title}
+        style={{
+          color: colors.grey[100]
+        }}
+        onClick={() => setSelected(title)}
+        icon={icon}
+        routerLink={<Link href={to}/>}
+        >
+          {title}
+      </MenuItem>
+    </>
   )
 }
 
@@ -50,20 +52,7 @@ export const Sidebar = () => {
   }, [isCollapsed])
   return (
     <>
-      <Box
-        sx={{
-          // "& .pro-icon-wrapper": {
-          //   backgroundColor: "transparent !important",
-          // },
-          // "& .pro-inner-item": {
-          //   padding: "5px 35px 5px 20px !important",
-          // },
-          // "& .pro-inner-item:hover": {
-          //   color: "#868dfb !important",
-          // },
-          
-        }}
-      >
+      <Box>
         <ProSideBar rootStyles={{
           ['&']: {
             border: "none !important"

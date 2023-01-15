@@ -6,6 +6,7 @@ import { ColorModeContext, useMode } from "../theme";
 import { Topbar } from "../components/global/Topbar/Topbar";
 import { Sidebar } from "../components/global/Sidebar/Sidebar";
 import { ProSidebarProvider } from "react-pro-sidebar";
+import { TestSidebar } from "../components/global/Sidebar/TestSidebar";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [theme, colorMode] = useMode();
@@ -17,7 +18,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           <CssBaseline />
           <ProSidebarProvider>
             <div className="app">
-              <Sidebar />
+              {/* <Sidebar /> */}
+              <TestSidebar/>
               <main className="content">
                 <Topbar />
                 <Component {...pageProps} />

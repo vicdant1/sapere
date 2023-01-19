@@ -31,7 +31,7 @@ export const TestSidebar = () => {
 
   return (
     <>
-      <Switch onChange={() => collapseSidebar()} />
+      {/* <Switch onChange={() => collapseSidebar()} /> */}
       <Sidebar
         transitionDuration={400}
         rootStyles={{

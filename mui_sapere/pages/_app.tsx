@@ -18,8 +18,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           <CssBaseline />
           <ProSidebarProvider>
             <div className="app">
-              {/* <Sidebar /> */}
-              <TestSidebar/>
+              <Sidebar />
+              {/* <TestSidebar/> */}
               <main className="content">
                 <Topbar />
                 <Component {...pageProps} />

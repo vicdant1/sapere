@@ -1,5 +1,5 @@
 import { DarkModeOutlined, LightModeOutlined, NotificationsOutlined, PersonOutlined, Search, SettingsOutlined } from "@mui/icons-material";
-import { Box, IconButton, InputBase, useTheme } from "@mui/material";
+import { Box, IconButton, InputBase, Tooltip, useTheme } from "@mui/material";
 import { useContext } from "react";
 import { ColorModeContext, tokens } from "../../../theme";
 
@@ -18,9 +18,11 @@ export const Topbar = () => {
         borderRadius="3px"
       >
         <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
-        <IconButton type="button" sx={{ p: 1 }}>
-          <Search />
-        </IconButton>
+        <Tooltip title="Go ahead" arrow>
+          <IconButton type="button" sx={{ p: 1 }}>
+            <Search />
+          </IconButton>
+        </Tooltip>
       </Box>
 
       {/* ICONS */}

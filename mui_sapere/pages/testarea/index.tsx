@@ -1,6 +1,11 @@
 import {
   Box,
   Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
   Divider,
   Grid,
   List,
@@ -15,6 +20,7 @@ import { useEffect, useState } from "react";
 const TestArea = () => {
   const [countries, setCountries] = useState<[]>([]);
   const [searchCountry, setSearchCountry] = useState<string>();
+  const [dialogOpen, setDialogOpen] = useState(false);
 
   const handleSearchCountryChange = (e) => {
     setSearchCountry(e.target.value);
@@ -109,6 +115,37 @@ const TestArea = () => {
           })}
         </Grid>
         </>)}
+
+        <Divider/>
+        <Typography variant="h2">
+          Modal test
+        </Typography>
+
+      <Button variant="outlined" color="inherit" onClick={() => setDialogOpen(true)}>
+        Open form dialog
+      </Button>
+      <Dialog open={dialogOpen} onClose={() => console.log("Closed dialog")}>
+        <DialogTitle>Subscribe</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            To subscribe to this website, please enter your email address here. We
+            will send updates occasionally.
+          </DialogContentText>
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Email Address"
+            type="email"
+            fullWidth
+            variant="standard"
+          />
+        </DialogContent>
+        <DialogActions>
+          <Button variant="inherit" onClick={() => setDialogOpen(false)}>Cancel</Button>
+          <Button variant="inherit" onClick={() => setDialogOpen(false)}>Subscribe</Button>
+        </DialogActions>
+      </Dialog>
       </Box>
     </>
   );

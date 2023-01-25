@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   Menu,
   MenuItem,
@@ -23,6 +23,7 @@ import { LogoDev } from "@mui/icons-material";
 import { Taglabel } from "../../utilities/Taglabel/Taglabel";
 import { useTheme } from "@emotion/react";
 import { tokens } from "../../../theme";
+import useOnClickOutside from "../../../utils/onClickOutside";
 
 export const TestSidebar = () => {
   const { collapseSidebar, collapsed } = useProSidebar();
@@ -31,7 +32,7 @@ export const TestSidebar = () => {
 
   return (
     <>
-      {/* <Switch onChange={() => collapseSidebar()} /> */}
+      <Switch onChange={() => collapseSidebar()} />
       <Sidebar
         transitionDuration={400}
         rootStyles={{

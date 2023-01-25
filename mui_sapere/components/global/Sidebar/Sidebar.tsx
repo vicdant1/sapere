@@ -45,12 +45,33 @@ export const Sidebar = () => {
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
   const [selected, setSelected] = useState<string>("Dashboard");
-
+  const [screenDimensions, setscreenDimensions] = useState({});
   const { collapseSidebar } = useProSidebar();
+
+  const handleScreenResize = () => {
+    setscreenDimensions({
+      height: window.innerHeight,
+      width: window.innerWidth
+    });
+  }
+
+  useEffect(() => {
+
+    if(screenDimensions.width < 796)
+      setIsCollapsed(true);
+    else
+      setIsCollapsed(false);
+
+    window.addEventListener("resize", handleScreenResize);
+
+    return () => window.removeEventListener("resize", handleScreenResize);
+
+  }, [screenDimensions])
 
   useEffect(() => {
     collapseSidebar(isCollapsed);
   }, [isCollapsed])
+
   return (
     <>
       <Box>
@@ -60,7 +81,7 @@ export const Sidebar = () => {
           },
           [`.${sidebarClasses.container}`]: {
             background: `${colors.primary[400]} !important`,
-            borderRadius: "0 15px 15px 0"
+            borderRadius: "0 15px 15px 0",
           },
         }}>
           <Menu menuItemStyles={{

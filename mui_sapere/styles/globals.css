@@ -10,6 +10,10 @@ body,
   font-family: "Source Sans Pro", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .app {
   display: flex;
   position: relative;
@@ -17,6 +21,7 @@ body,
 
 .content{
   height: 100vh;
+  margin-left: 1rem;
 }
 
 ::-webkit-scrollbar {
